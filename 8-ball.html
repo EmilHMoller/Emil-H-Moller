@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Magic 8-Ball</title>
+        <style>
+            body{
+                background-color: black;
+                padding: 0;
+                margin: 0;
+            }
+            .container {
+                width: 425px;
+                position: relative;
+                margin: 20vh auto;
+            }
+            h1 {
+                text-align: center;
+                color: white;
+            }
+            p {
+                font-size: 16px;
+                color: white;
+            }
+            #demo {
+                font-size: 16px;
+                color: rgb(255, 0, 0);
+                background-color: rgb(0, 0, 0);
+                padding: 7px;
+                margin:0 auto;
+                width: 293px;
+                display:block;
+            }
+            #mig {
+                font-size: 20px;
+                width: 293px;
+                margin:0 auto;
+                display:block;
+            }
+            #billede {
+                width: 425px;
+                position:absolute;
+                left:0;
+                top:20vh;
+            }
+            #billede2 {
+                width: 425px;
+                position:absolute;
+                right:0;
+                top:20vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Yoo, stil mig et spørgsmål bruh!</h1>
+            <textarea id="mig" style="resize: none;" placeholder="Skriv her..."></textarea>
+            <button id="Demo" onclick="answer()">Du skal trykke på mig når du er færdig.</button>
+       
+            <p id="Yoo"></p>
+
+        </div> <script>
+            var answers =["Er du dum eller hvad!", "Det forstår jeg ikke bruh.", "Swag!", "K.", "Bruh!", "Din mor!!!!!!!", "Jap! Det kan vi godt lide.", "Sikkert.", "Hvorfor spørger du mig om det?", "Prøv igen.", "Idiot!", "Katjoffel.", "YOOOOO DUDE WTF!!!"];
+            function answer() {
+                var random = answers[Math.floor(Math.random() * answers.length)];
+                document.getElementById("Yoo").innerHTML = random;
+               
+            }
+        </script>
+        <img id="billede" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Magic_eight_ball.png" />
+        <img id="billede2" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Magic_eight_ball.png" />
+    </body>
+</html>

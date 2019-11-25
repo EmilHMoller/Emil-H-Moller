@@ -1,0 +1,42 @@
+
+<html>
+    <style>
+        button {
+            width: 350px;
+            padding: 10px;
+            background-color: rgb(46, 46, 46);
+            font-size: 50px;
+            box-sizing: border-box;
+            transition: 0.5s;
+           
+            }
+
+        .container {
+            width:500px;
+            position:relative;
+            margin: 0 auto;
+        }
+    </style>
+   <body>
+        <h1><strong>Se på mig</strong></h1>
+        <p id="demo"></p>
+       <div class="container">
+       
+       <button onclick="DisplayDate()">Næste...</button>
+       
+       </div>
+
+
+
+
+       
+
+
+
+        <script>
+            function DisplayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
+        </script>
+    </body>
+</html>

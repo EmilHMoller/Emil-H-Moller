@@ -1,0 +1,119 @@
+<body> Alt skal være inden for body.
+<div> div er en mappe.
+<div id=""> id kan stø i alle elementerne og bruges til
+at give den valgte element en overskrift. 
+(Det kan ikke ses på resultatet.)
+
+<h1> Overskrift.
+<h2> Mindre overskrift.
+<h3> Mindre x2 overskrift.
+<p> Tekstbox.
+<em> Laver skråskrift.
+<strong> Fremhever ordene.
+<br> Lige som enter i et doc. Den rykker et felt ned.
+(Skal kun bruge en uden </>)
+
+________________
+Eksempel på kodeing.
+
+<!doctype html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> Forsiden - Øse Cop</title>
+    </head>
+
+<style>
+h1 {
+color:#00FF00;
+font-size: 40px;
+}
+
+#lol {
+    color:magenta;
+    font-size: 60px;
+}
+
+.kek {
+    color:red;
+    font-size: 80px;
+}
+</style>
+
+    <body>
+        <h1>Hello world!</h1>
+        <h1 id="lol">Hello world!</h1>
+        <h1 class="kek">Hello world!</h1>
+    </body>
+
+</html>
+__________________
+Eksempel på coding.
+
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <h3>Species</h3>
+    <ul>
+      <li>Arctos</li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <ol>
+      <li>Russia</li>
+      <li>United States</li>
+      <li>Canada</li>
+    </ol>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" alt="A Brown Bear"/>
+    <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" width="320" height="240" controls>
+      Video not supported
+    </video>
+  </div>
+</body>
+__________________
+
+HTML stands for HyperText Markup Language and is used to create 
+the structure and content of a webpage.
+
+Most HTML elements contain opening and closing tags with raw text or other HTML tags between them.
+HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.
+
+Any visible content should be placed within the opening and closing <body> tags.
+
+Headings and sub-headings, <h1> to <h6> tags, are used to enlarge text.
+
+<p>, <span> and <div> tags specify text or blocks.
+
+The <em> and <strong> tags are used to emphasize text.
+
+Line breaks are created with the <br> tag.
+
+Ordered lists (<ol>) are numbered and unordered lists (<ul>) are bulleted.
+Images (<img>) and videos (<video>) can be added by linking to an existing source.
+________________
+Data is printed, or logged, to the console, a panel that displays messages, with console.log().
+
+We can write single-line comments with // and multi-line comments between /* and */.
+There are 7 fundamental data types in JavaScript: strings, numbers, booleans, null, undefined, symbol, and object.
+Numbers are any number without quotes: 23.8879
+Strings are characters wrapped in single or double quotes: 'Sample String'
+The built-in arithmetic operators include +, -, *, /, and %.
+Objects, including instances of data types, can have properties, stored information. The properties are denoted with a . after the name of the object, for example: 'Hello'.length.
+Objects, including instances of data types, can have methods which perform actions. Methods are called by appending the object or instance with a period, the method name, and parentheses. For example: 'hello'.toUpperCase().
+We can access properties and methods by using the ., dot operator.
+Built-in objects, including Math, are collections of methods and properties that JavaScript provides.
